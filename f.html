@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #D4AF37;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  width:1250px;
+}
+.as-main
+{
+background-color: black;
+	width:1250px;
+	height:1200px;
+	align:center;
+	color:white;
+	 margin-left: 40px;
+    margin-right: 20px;
+
+	}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #D4AF37;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  float: middle;
+  font-size: 28px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+
+<body>
+<center><header>
+  <h2>Hakka Noodles</h2>
+</header></center>
+<div class="as-main">
+<br>
+<center><img src="Hakka noodless.jfif"width="350px"height="350px"border="3px"></center>
+ <br>
+ <hr>
+    <h2>Ingredients</h2>
+	<hr>
+<ul style="list-style-type:disc;">
+<li>300 grams noodles, I used Ching Hakka Noodles</li>
+<li>1 tablespoon sesame oil</li>
+<li>1 tablespoon vegetable oil</li>
+<li>2 teaspoons minced garlic</li>
+<li>1 teaspoon minced ginger</li>
+<li>1 green chili, sliced</li>
+<li>1 stalk celery, chopped</li>
+<li>1 medium red onion, 100 grams, sliced</li>
+<li>1 large carrot, 100 grams, sliced</li>
+<li>1 large red pepper, 200 grams, sliced, can use mix of green and red</li>
+<li>3 stalks green onion, chopped + more to garnish</li>
+<li>2.5 tablespoons soy sauce</li>
+<li>1 tablespoon rice vinegar, or white vinegar</li>
+<li>1 teapoon hot sauce, like sriracha</li>
+<li>1/2 teaspoon sugar, optional</li>
+<li>1/4 teaspoon black pepper powder</li>
+<li>1/2 teaspoon salt, or to taste</li>
+<li>pinch white pepper powder</li>
+<li>1 teaspoon chili oil, optional</li>
+</ul>
+  <hr>
+  <h2>Recipe</h2>
+	<hr>
+<p>Chop all the veggies before you start making the noodles.
+
+Boil the noodles according to instructions on the package. I was supposed to cook my noodles for 2 minutes only.
+
+
+
+Drain the noodles and wash under cold running water, this stops the cooking process. Add 1/2 tablespoon of vegetable oil to the noodles and toss so that the noodles get lightly coated with the oil and don’t stick to each other. Set it aside.
+
+
+
+In a wok heat 1 tablespoon vegetable oil and 1 tablespoon sesame oil on medium-high heat. Once the oil is hot add the minced garlic and ginger, sliced green chili and chopped celery.
+
+
+
+Saute for few seconds until the ginger garlic starts to change color.
+
+Add sliced onions and saute for a minute or two until the sides of the onion starts turning light golden brown.
+
+
+
+Add in the sliced carrots, bell pepper, green onion and cook for 1 minute on high heat. The veggies should remain crunchy.
+
+
+
+Push veggies to the side, lower the heat and add soy sauce, rice vinegar, hot sauce (like sriracha) and sugar (if using).
+
+
+
+Toss the veggies to combine well with the sauce. Add in the black pepper, salt and white pepper.
+
+Stir in the boiled noodles. Using a pair of tongs, mix it well so that the noodles are well coated with the sauce.
+
+
+
+As a final touch, stir in a teaspoon of chili oil. This is totally optional. Toss the noodles well and garnish with more spring onion greens.
+
+Serve hakka noodles as such or with your favorite Indo chinese dishes! I love mine with chili paneer.</p>
+<br>
+<br>
+<center><button class="button"onclick="print_current_page()"><span>Print</span></button></center>
+</div>
+<script>
+function print_current_page()
+{
+window.print();
+}
+</script>
+</body>
+</html>

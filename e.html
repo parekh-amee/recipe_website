@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #D4AF37;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  width:1250px;
+}
+.as-main
+{
+background-color: black;
+	width:1250px;
+	height:1200px;
+	align:center;
+	color:white;
+	 margin-left: 40px;
+    margin-right: 20px;
+
+	}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #D4AF37;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  float: middle;
+  font-size: 28px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+
+<body>
+<center>
+<header>
+  <h2>Masala pasta</h2>
+</header>
+</center>
+<div class="as-main">
+<br>
+<center><img src="Masala pastaa.jfif"width="350px"height="350px"border="3px"></center>
+<br>
+<hr>
+<h2>Ingredients</h2>
+<hr>
+<ul style="list-style-type:disc;">
+<li>1.5 tablespoons oil, 22 ml, I used avocado oil</li>
+<li>3-4 large garlic cloves, finely chopped</li>
+<li>1 inch ginger, finely chopped</li>
+<li>1/2 jalapeño, seeded and chopped or use 1 green chili</li>
+<li>1 medium yellow onion, chopped</li>
+<li> cup water, 8 oz/240 ml</li>
+<li>8 oz whole wheat penne pasta</li>
+<li>14.5 oz can diced tomatoes</li>
+<li>1 tablespoon tomato paste</li>
+<li>1/4 teaspoon cardamom powder, + more to sprinkle later</li>
+<li>1/4 teaspoon garam masala, + more to sprinkle later</li>
+<li>1/4 teaspoon red chili powder, or to taste</li>
+<li>1/2 teaspoon kashmiri red chili powder, for color</li>
+<li>1/2 teaspoon salt, or to taste</li>
+<li>1/2 teaspoon sugar</li>
+<li>1 cup coconut milk, I used Chaokoh brand</li>
+<li>1.5 teaspoon kasuri methi, crushed, dried fenugreek leaves</li>
+<li>1 tablespoons chopped cilantro, + more to garnish</li>
+</ul>
+  <hr>
+  <h2>Recipe</h2>
+	<hr>
+<p>Press the saute button on the Instant Pot. Once it displays hot, add the oil and then add the chopped garlic, ginger, jalapeño and onion.
+
+Saute for 2 to 3 minutes until onions are soft. Then add the water and de-glaze the pot. Make sure there's no brown bits stuck at the bottom.
+
+Followed by the pasta, can of diced tomatoes, tomato paste, cardamom powder, garam masala, red chili powder, kashmiri red chili powder and salt. Do not stir. You may spread the tomatoes over the pasta a bit using a spatula.
+
+Close the pot with its lid. Press the manual or pressure cook button and cook on high pressure for 6 minutes. Let the pressure release naturally for 5 minutes and then quick release the pressure.
+
+Open the lid, stir everything and press the saute button.
+
+Add the sugar, coconut milk, kasuri methi and let the pasta simmer for 2 minutes.
+
+Add in chopped cilantro and sprinkle cardamom powder and garam masala on top before serving.
+
+Enjoy Masala Pasta warm!</p>
+<br>
+<br>
+<center><button class="button"onclick="print_current_page()"><span>Print</span></button></center>
+</div>
+<script>
+function print_current_page()
+{
+window.print();
+}
+</script>
+</body>
+</html>

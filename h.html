@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #D4AF37;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+ width:1250px;
+}
+.as-main
+{
+background-color: black;
+	width:1250px;
+	height:950px;
+	align:center;
+	color:white;
+	 margin-left: 40px;
+    margin-right: 20px;
+
+	}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #D4AF37;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  float: middle;
+  font-size: 28px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<center><header>
+  <h2>Fruit Custard</h2>
+</header></center>
+<div class="as-main">
+<br>
+<center><img src="Fruit custardd.jfif"width="350px"height="350px"border="3px"></center>
+<br>
+ <hr>
+    <h2>Ingredients</h2>
+	<hr>
+<ul style="list-style-type:disc;">
+<li>3 cups whole milk, 24 oz</li>
+<li>4-5 tablespoons sugar, or adjust to taste</li>
+<li>3 tablespoons custard powder, I use and recommend Brown Polson Vanilla Custard Powder</li>
+<li>splash of rose water, optional</li>
+<li>pinch cardamom powder, optional</li>
+<li>2 cups assorted fruits, I used banana, apple, mango</li>
+</ul>
+  <hr>
+  <h2>Recipe</h2>
+	<hr>
+<p>Add 3 (24 oz) cups milk to a heavy bottom pan on medium high heat.
+
+Once it has heated up a little, take out 3 tablespoons milk from the pan into a small bowl. Add in 3 tablespoons custard powder to that milk and mix well. There should be no lumps. Set it aside.
+
+Stir the milk in the pan in between and let it heat up and come to a gentle boil. Then lower the heat, add sugar and mix until combined.
+
+Start adding the custard mix. Add little at a time and mix after each addition. Whisk continuously. 
+
+Cook for 2-3 minutes until the custard thickens. Remove pan from heat and let it cool down a bit. At this point you can also add rose water and cardamom powder (if using). Then cover the custard and place in the refrigerator to chill.
+
+At the same time, chop all fruits that you are using for the custard and refrigerate.
+
+Once the custard and the fruits are chilled, transfer custard to serving bowl and mix in the fruits.
+
+Cover and refrigerate the custard for 1 to 2 hours after mixing in the fruits for the flavors to develop. Then garnish with pomegranate arils and serve fruits custard in bowls!</p>
+<br>
+<br>
+<center><button class="button"onclick="print_current_page()"><span>Print</span></button></center>
+</div>
+<script>
+function print_current_page()
+{
+window.print();
+}
+</script>
+</body>
+</html>

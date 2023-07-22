@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.as-img
+{
+margin: 20px auto 20px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #D4AF37;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  width:1250px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #D4AF37;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  float: middle;
+  font-size: 28px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.as-main
+{
+background-color: black;
+	width:1250px;
+	height:1750px;
+	align:center;
+	color:white;
+	 margin-left: 40px;
+    margin-right: 20px;
+
+	}
+</style>
+</head>
+
+<body>
+<center>
+<header>
+  <h2>Vegetable Biriyani</h2>
+</header>
+</center>
+ <div class="as-main">
+ <center>
+<img class="as-img"src="Veg biryani recipe _.jpg"width="350px"height="350px"border="3px"></center>
+ <hr>
+
+    <h2>Ingredients</h2>
+	 <hr>
+<ul style="list-style-type:disc;">
+<h3>Produce</h3>
+  <li>1 Carrot, medium</li>
+  <li>2 tbsp Coriander leaves or cilantro</li>
+  <li>1 Green chili</li>
+<li>1 Bay leaf</li>
+<li>1/3 cup Green peas</li>
+<li>2 tbsp Mint</li>
+<li>1 Onion, medium</li>
+<li>1 Potato or beans, small</li>
+<li>1 Tomato, small</li>
+</ul>
+
+<h3>Condiments</h3>
+<ul style="list-style-type:disc;">
+<li>1 tsp Ginger garlic paste</li>
+<li>1 tbsp Lemon juice</li>
+<li>Pasta & grains</li>
+<li>1 cup Basmati rice</li>
+<li>Baking & spices</li>
+<li>4 Cardamoms, green</li>
+<li>2 inch Cinnamon</li>
+<li>1 tsp Garam masala</li>
+<li>1/8 tsp Salt</li>
+<li>1 Star anise</li>
+<li>Oils & vinegars</li>
+<li>2 tbsp Oil</li>
+</ul>
+<h3>Nuts & seeds</h3>
+<ul style="list-style-type:disc;">
+<li>10 Cashews</li>
+</ul>
+<h3>Dairy</h3>
+<ul style="list-style-type:disc;">
+<li>2 tbsp Curd or yogurt</li>
+</ul>
+<h3>Liquids</h3>
+<ul style="list-style-type:disc;">
+<li>1 3/4 cups Water</li>
+</ul>
+<h3>Other</h3>
+<ul style="list-style-type:disc;">
+<li>6 cloves ((or laung))</li>
+<li>½ teaspoon shahi jeera (or jeera or cumin)</li>
+</ul>
+   <hr>
+  <h2>Recipe</h2>
+   <hr>
+	<p hspace="20">Firstly, in a large cooker heat ghee and saute spices.<br>
+Further, saute onions and ginger - garlic paste well.<br>
+Additionally, add in mixed vegetables and saute till all vegetables shrinks.<br>
+Now add in curd keeping flame on low.<br>
+Also add in spice powder and salt to taste. mix well.<br>
+Also add in coriander leaves, mint leaves and fried onions.<br>
+Spread soaked basmati rice.<br>
+Further sprinkle biryani masala powder and salt.<br>
+Also place in coriander leaves, mint and fried onions.<br>
+Additionally, pour in saffron water and ghee.<br>
+Pour water and simmer for 25 minutes.<br>
+Finally, serve veg biryani prepared in cooker along with raita.</p>
+<br>
+<br>
+<center><button class="button"onclick="print_current_page()"><span>Print</span></button></center>
+</div>
+<script>
+function print_current_page()
+{
+window.print();
+}
+</script>
+</body>
+</html>

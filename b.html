@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #D4AF37;
+  padding: 6px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+    width:1250px;
+}
+.as-main
+{
+background-color: black;
+	width:1250px;
+	height:1750px;
+	align:center;
+	color:white;
+	 margin-left: 40px;
+    margin-right: 20px;
+
+	}
+	.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #D4AF37;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  float: middle;
+  font-size: 28px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+
+<body>
+<center>
+<header>
+  <h2>Manchurian</h2>
+</header>
+</center>
+<div class="as-main">
+<br>
+ <center><img src="Veg manchurian.jfif"width="350px"height="350px"border="3px"></center>
+ <hr>
+<h2>Ingredients</h2>
+<hr>
+<h3>Produce</h3>
+<ul style="list-style-type:disc;">
+  <li>1 Carrot, medium</li>
+  <li>1/4 cup French beans</li>
+  <li>3/4 tbsp Garlic</li>
+<li>1/2 tbsp Ginger</li>
+<li>1/2 cup Green onion</li>
+</ul>
+<h3>Condiments</h3>
+<ul style="list-style-type:disc;">
+<li>1 tsp Ginger garlic paste</li>
+<li>2 tbsp Red chili sauce</li>
+<li>1 tbsp Soya sauce</li>
+</ul>
+<h3>Baking & spices</h3>
+<ul style="list-style-type:disc;">
+<li>1/2 tsp Pepper</li>
+<li>3 tbsp Plain flour</li>
+<li>1/2 tsp Red chili powder</li>
+<li>2 Salt</li>
+<li>1 tsp Sugar</li>
+</ul>
+<h3>Oils & vinegars</h3>
+<ul style="list-style-type:disc;">
+<li>1 Oil</li>
+<li>1 1/2 tbsp Oil</li>
+<li>1 tsp Vinegar</li>
+</ul>
+<h3>Bread & baked goods</h3>
+<ul style="list-style-type:disc;">
+<li>1/4 cup Bread crumbs</li>
+</ul>
+<h3>Other</h3>
+<ul style="list-style-type:disc;">
+<li>1 1/3 cup Water</li>
+<li>Other</li>
+<li>¼ cup capsicum ( or bell peppers finely chopped)</li>
+</ul>
+  <hr>
+  <h2>Recipe</h2>
+  <hr>
+  <h3>VEG BALLS RECIPE:</h3>
+<p>In a large mixing bowl add grated carrot, cabbage and spring onion greens.
+add a tsp of soy sauce.
+Also add chilli sauce, ginger garlic paste and crushed black pepper. Note, we are not adding any salt as soy sauce do have salt in it. if you want any extra then add at this stage.
+Squeeze the veggies well and mix well. Veggies has to release water from them.
+Now add maida and corn flour.
+Make a nice thick dough without adding any extra water. Water present in veggies are enough to combine.
+Now make small small balls and keep aside.
+Deep fry the balls on medium flame.
+Stir in between and fry till they turn golden brown.
+Drain off the veg balls over a kitchen towel to remove excess oil.</p>
+<h3>VEG MANCHURIAN GRAVY:</h4>
+<p>In a large pan, heat a tbsp of oil.
+Add finely chopped ginger and garlic. Saute for a while.
+Then add spring onions white and continue to saute for a minute.
+Also add capsicum and fry till the blisters appear over them.
+Now add red chilli sauce and soy sauce.
+Add corn starch. to prepare corn starch mix 2 tsp of corn flour with ¼ cup of water.
+Give a good mix. Then add a cup of water and continue to stir. Alternatively, you can add water first, get to a boil and then add corn starch.
+Add more chilli sauce if required and give a mix. I like my gravy to be more spicy so have added a tsp of more chilli sauce.
+Check for taste, and if you prefer more savory taste then add more soy sauce. give a good mix.
+Get to a boil and check for consistency.
+Now add pepper and salt to taste. Remember, soy sauce do contain salt so be careful while adding. give a mix.
+Add fried veg balls and give a quick stir.
+Transfer to a serving bowl and garnish with chopped spring onions green.
+Serve veg manchurian gravy with veg fried rice.</p>
+	<hr>
+	<br>
+<br>
+<center><button class="button"onclick="print_current_page()"><span>Print</span></button></center>
+	</div>
+	<script>
+function print_current_page()
+{
+window.print();
+}
+</script>
+</body>
+</html>

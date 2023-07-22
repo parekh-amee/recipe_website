@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #D4AF37;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  width:1250px;
+}
+.as-main
+{
+background-color: black;
+	width:1250px;
+	height:1050px;
+	align:center;
+	color:white;
+	 margin-left: 40px;
+    margin-right: 20px;
+
+	}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #D4AF37;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  float: middle;
+  font-size: 28px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<center><header>
+  <h2>Almond Jaggery</h2>
+</header></center>
+<div class="as-main">
+<br>
+<center><img src="almond.png"width="350px"height="350px"border="3px"></center>
+<br>
+ <hr>
+    <h2>Ingredients</h2>
+	<hr>
+<ul style="list-style-type:disc;">
+<li>1.25 cups atta, 163 grams, durum whole wheat flour</li>
+<li>1/4 cup almond flour, 24 grams</li>
+<li>1/2 teaspoon baking powder</li>
+<li>1/2 teaspoon cardamom powder</li>
+<li>pinch salt</li>
+<li>1/3 cup oil, 80 ml, use any flavorless oil like avocado, canola</li>
+<li>1/2 cup jaggery powder (sifted), 64 grams, measured after sifting</li>
+<li>1/2 teaspoon almond extract</li>
+<li>2 tablespoons oat milk, or any milk of choice, may need more</li>
+<li>1/2 cup crushed almonds, for rolling</li>
+</ul>
+  <hr>
+  <h2>Recipe</h2>
+	<hr>
+<p>Pre heat oven to 350 F degrees. Line a large baking sheet with parchment paper and set aside.
+
+In a large bowl whisk together atta, almond flour, baking powder, cardamom powder and salt. Set aside. Also, sift the jaggery powder.
+
+In a large bowl (using a whisk) or use steel bowl of your stand mixer fitted with paddle attachment, whisk together oil with jaggery powder and almond extract.
+
+Add milk (I used oat milk) and combine well.
+
+Start adding the flour mix, little by little and mixing after each addition.
+
+The dough should come together. If it isn't coming together, you might need to add more milk. Cling wrap the dough and refrigerate for 15 minutes.
+
+Then roll the dough into 1/4 inch thickness using a rolling pin. If the dough is breaking a lot while rolling, it might be dry and needs more moisture. In such case, just wet your hands with little water, quick knead the dough and then roll again.
+
+Cut cookies using a cookie cutter. I used a square cookies cutter and my cookies measured 1.5 x 1.5 inch.
+
+Take a plate with crushed almonds (I usually crush the almonds in a food processor, don't crush it fine but coarsely) and roll the cut cookies with the crushed almonds.
+
+You may apply some milk or water on top of the cookies and then roll in almonds if the almonds aren't sticking well.
+
+Repeat the same process for all the cookies and then arrange them on a baking tray. Bake at 350 F degrees for 20 minutes (18 minutes if don't want them super crispy).
+
+Let the cookies cool completely and then store in an air-tight container.</p>
+<br>
+<br>
+<center><button class="button"onclick="print_current_page()"><span>Print</span></button></center>
+</div>
+<script>
+function print_current_page()
+{
+window.print();
+}
+</script>
+</body>
+</html>
